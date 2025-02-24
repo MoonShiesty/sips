@@ -32,7 +32,7 @@ Revert SIP-45 and begin exploring of one of two approaches:
 
 1) make consensus ordering random. sui randomness already provides a seed to randomly reorder transactions. this approach likely requires an additional hop to sequence consensus. this attempts minimizes extractable value by making it non-deterministic for searchers to place a transaction within a block. my concern with this approach is that searchers can attempt to statistically frontrun targets by spamming transactions that revert if they don't land in the right spot
 
-2) allow allow validators to specify how they want to be consensus ordering and expose an API for searchers to propose ordering. this approach will maximize extractable value for validators and provide the equivalent of a "block-building" API on SUI
+2) allow validators to specify how they want to be consensus ordering and expose an API for searchers to propose ordering. this approach will maximize extractable value for validators and provide the equivalent of a "block-building" API on SUI
 
 
 ## Rationale
