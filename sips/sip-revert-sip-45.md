@@ -34,12 +34,12 @@ Revert SIP-45 and begin exploring of one of two approaches:
 
 2) allow validators to specify consensus ordering and expose an API for searchers to propose a consensus ordering. this approach will maximize extractable value for validators and provides the equivalent of a ["block-building"](https://github.com/ethereum/builder-specs?tab=readme-ov-file) API on SUI
 
-
 ## Rationale
 
-reverting SIP-45 an important issue because deterministic block ordering exposes users to MEV without a way to protect themselves through fee markets
+reverting SIP-45 is an important issue because deterministic consensus transaction ordering exposes users to MEV without a way to protect themselves through fee markets
 
 front-running on SUI is possible whenever either:
+
 1) protocol leaks information about transactions
 2) a validator leaks information about transaction certification
 
